@@ -1,5 +1,9 @@
 # sadalyrice.github.io
-
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Arches and Avenues</h1>
+</body>
 <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
@@ -8,3 +12,4 @@
     <li><a href="contact.html">Contact Us</a></li>
   </ul>
 </nav>
+</html>
