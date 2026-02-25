@@ -1,49 +1,107 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    background-color: #fdfbff;
-    color: #333;
-}
-title {
-    color: #D8BFD8
-}
-nav {
-    display: flex;
-    justify-content: space-between;
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: "Helvetica", sans-serif; 
+} 
+body{
+background: #faf7fc;
+ color: #3a2e4f;
+} 
+header{
+background: #ffffff;
+ padding: 20px 40px; 
+ display: flex; 
+ justify-content: space-between; 
+ align-items: center; 
+ border-bottom: 2px solid #e8d9f5; 
+} 
+.logo{
+font-size: 28px; 
+ font-weight: bold; 
+ color: #b57edc;
+} 
+nav ul{
+list-style: none; 
+ display: flex; 
+ gap: 25px; 
+} 
+nav a{ 
+    text-decoration: none; 
+    color: #3a2e4f; 
+    font-weight: bold; 
+} 
+.hero{
+    background: url('https://images.unsplash.com/photo-1529634806980-85d6bd7e7b07?auto=format&fit=crop&w=1500&q=80') 
+        center/cover no-repeat; 
+    height: 70vh; 
+    display: flex; 
     align-items: center;
-    padding: 20px 10%;
-    background-color: white;
-    border-bottom: 2px solid #E6E6FA;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #6a1b9a; 
-    font-weight: bold;
-}
-
-
-.hero {
-    height: 60vh;
-    background-color: #E6E6FA; 
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
+    color: white; 
+} 
+.hero-text h2 {
+    font-size: 48px; 
+    margin-bottom: 10px; 
+} 
+.hero-text p {
+    font-size: 20px; 
+    margin-bottom: 20px; 
+} 
+.btn { 
+    background: #b57edc; 
+    color: white; 
+    padding: 12px 25px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    transition: 0.3s; 
+} 
+.btn:hover { 
+    background: #9d63c9;
+} 
+.services { 
+    padding: 60px 40px; 
+    text-align: center; 
+} 
+.service-grid {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; 
+    margin-top: 30px; 
+} 
+.service-card {
+    background: white; 
+    padding: 25px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    border-top: 4px solid #d8b7f0; 
 }
-
-.btn {
-    background-color: #9370DB; 
-    color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 30px;
-    margin-top: 20px;
-}
+.gallery {
+    padding: 60px 40px; 
+    text-align: center; 
+} 
+.gallery-grid {
+    margin-top: 30px; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px; 
+} 
+.photo { background: #e8d9f5;
+        height: 180px; border-radius: 8px; 
+       }
+.about {
+    padding: 60px 40px; 
+    text-align: center; 
+    background: #f4e9fb;
+} 
+.contact { 
+    padding: 60px 40px; 
+    text-align: center; 
+} 
+footer {
+    background: #3a2e4f;
+    color: white; 
+    text-align: center; 
+    padding: 20px; }
