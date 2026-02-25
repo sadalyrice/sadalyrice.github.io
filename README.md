@@ -12,5 +12,6 @@
     <li><a href="contact.html">Contact Us</a></li>
   </ul>
 </nav>
+    <img src="download.jpg" alt="Wedding Event">
 </body>
 </html>
