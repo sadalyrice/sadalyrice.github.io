@@ -4,8 +4,9 @@ body {
     background-color: #fdfbff;
     color: #333;
 }
-
-/* Navigation Menu */
+title {
+    color: #D8BFD8
+}
 nav {
     display: flex;
     justify-content: space-between;
