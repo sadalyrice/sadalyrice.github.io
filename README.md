@@ -1,14 +1,7 @@
 <html lang="en">
   <head>
     <h1>Arches and Avenues</h1>
-    <img src="download.jpg" alt="Wedding Event">
-    <link rel="stylesheet" href="style.css">
-    </head>
-  <body>
-    <header>
-      <p>Turning special moments into lifelong memories</p>
-    </header>     
-<nav>
+    <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="services.html">Offerings</a></li>
@@ -16,6 +9,14 @@
     <li><a href="contact.html">Contact Us</a></li>
   </ul>
 </nav>
+    <img src="download.jpg" alt="Wedding Event">
+    <link rel="stylesheet" href="style.css">
+    </head>
+  <body>
+    <header>
+      <p>Turning special moments into lifelong memories</p>
+    </header>     
+
     <section class="hero"> 
       <div class="hero-text"> 
         <h2>Creating Unforgettable Events</h2> 
