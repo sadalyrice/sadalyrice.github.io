@@ -102,8 +102,8 @@ footer {
     text-align: center; 
     padding: 20px; 
 }
-.contact.html {
-        body {
+
+.contact {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: #f3f0f9; 
@@ -176,11 +176,9 @@ button {
     width: 100%;
     transition: background-color 0.3s ease, transform 0.1s ease;
 }
-
 button:hover { 
     background-color: #7e66a0; 
 }
-
 button:active {
     transform: scale(0.98); 
 }
