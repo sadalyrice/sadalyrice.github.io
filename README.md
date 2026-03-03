@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
     <h1>Arches and Avenues</h1>
     <nav>
