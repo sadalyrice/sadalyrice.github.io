@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Arches and Avenues</title>
+    <style>
+        :root {
+            --light-purple: #f3f0f9;
+            --medium-purple: #b19cd9;
+            --deep-purple: #5e4b8b;
+            --accent-purple: #9d84b7;
+            --white: #ffffff;
+        }
 
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--light-purple);
+            color: var(--deep-purple);
+            line-height: 1.6;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #b19cd9 0%, #dcd0ff 100%);
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .content-container {
+            max-width: 1000px;
+            margin: -40px auto 40px;
+            background: var(--white);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(157, 132, 183, 0.15);
+        }
+
+        .our-story {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .our-story h2 {
+            color: var(--deep-purple);
+            font-size: 2rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .profile-card {
+            background: var(--light-purple);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            background-color: var(--medium-purple);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            overflow: hidden; 
+        }
+
+        .profile-card h3 {
+            margin: 10px 0 5px;
+            color: var(--deep-purple);
+        }
+
+        .role {
+            font-style: italic;
+            color: var(--accent-purple);
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .footer-cta {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px;
+            border-top: 2px solid var(--light-purple);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--deep-purple);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-purple);
+        }
+
+        @media (max-width: 600px) {
+            .hero-section h1 { font-size: 2rem; }
+            .content-container { padding: 25px; margin: -20px 15px 40px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-section">
+        <h1>Making Magic Happen.</h1>
+        <p>Your vision, our obsession.</p>
+    </header>
+
+    <div class="content-container">
+        <section class="our-story">
+            <h2>The Duo Behind the Dream</h2>
+            <p>We’re two friends in our twenties who believe that every life milestone—no matter how big or small—deserves a main-character moment. Based in [Your City], we started this business because we were tired of "cookie-cutter" events. We’re here to bring Gen-Z energy, aesthetic precision, and stress-free planning to your next big day.</p>
+        </section>
+
+        <div class="team-grid">
+            <div class="profile-card">
+                <div class="profile-image">Photo 1</div>
+                <h3>Name One</h3>
+                <span class="role">Co-Founder & Lead Designer</span>
+                <p>The creative brain. Obsessed with mood boards, lighting, and making sure every corner of your venue is "Instagrammable."</p>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-image">Photo 2</div>
+                <h3>Name Two</h3>
+                <span class="role">Co-Founder & Logistics Pro</span>
+                <p>The spreadsheet queen. If there’s a timeline to manage or a vendor to negotiate with, she’s already three steps ahead.</p>
+            </div>
+        </div>
+
+        <div class="footer-cta">
+            <h3>Let's plan something unforgettable.</h3>
+            <p>Ready to get started?</p>
+            <a href="contact.html" class="btn">Say Hello</a>
+        </div>
+    </div>
+
+</body>
+</html>
