@@ -3,42 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us | Arches and Avenues</title>
+    <style>
+        :root {
+            --soft-lavender: #f3f0f9;
+            --lilac: #dcd0ff;
+            --deep-purple: #5e4b8b;
+            --muted-purple: #9d84b7;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--soft-lavender);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: var(--deep-purple);
+        }
+
+        .contact-card {
+            background: var(--white);
+            width: 100%;
+            max-width: 500px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(157, 132, 183, 0.15);
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            color: var(--deep-purple);
+        }
+
+        p.subtitle {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--muted-purple);
+            margin-bottom: 30px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        input, textarea {
+            border: 2px solid var(--soft-lavender);
+            border-radius: 10px;
+            padding: 12px;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            border-color: var(--lilac);
+            box-shadow: 0 0 8px rgba(220, 208, 255, 0.5);
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .full-width {
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            background-color: var(--muted-purple);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: var(--deep-purple);
+        }
+
+        @media (max-width: 480px) {
+            .form-row {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/your-endpoint" method="POST">
-        
-        <div class="form-group">
-            <label>First Name</label>
-            <input type="text" name="first_name" required>
-        </div>
+    <div class="contact-card">
+        <h2>Let’s Plan Something.</h2>
+        <p class="subtitle">Fill out the details below and we’ll be in touch soon!</p>
 
-        <div class="form-group">
-            <label>Last Name</label>
-            <input type="text" name="last_name" required>
-        </div>
+        <form action="https://formspree.io/f/your_id" method="POST">
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" name="first_name" placeholder="Jane" required>
+                </div>
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" name="last_name" placeholder="Doe" required>
+                </div>
+            </div>
 
-        <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" name="_replyto" required>
-        </div>
+            <div class="form-group full-width">
+                <label>Email Address</label>
+                <input type="email" name="email" required>
+            </div>
 
-        <div class="form-group">
-            <label>Phone Number</label>
-            <input type="tel" name="phone">
-        </div>
+            <div class="form-group full-width">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" placeholder="(555) 000-0000">
+            </div>
 
-        <div class="form-group">
-            <label>Questions & Comments</label>
-            <textarea name="message" placeholder="Let us know!"></textarea>
-        </div>
+            <div class="form-group full-width">
+                <label>Questions & Comments</label>
+                <textarea name="message" placeholder="Tell us about your event! Date, vibe, guest count..."></textarea>
+            </div>
 
-        <button type="submit">Send Message</button>
-    </form>
-</div>
+            <button type="submit">Send Inquiry</button>
+        </form>
+    </div>
 
 </body>
 </html>
