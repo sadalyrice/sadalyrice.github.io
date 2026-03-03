@@ -1,0 +1,132 @@
+:root {
+    --lavender-light: #f3f0f9;
+    --lavender-mid: #dcd0ff;
+    --lavender-dark: #9d84b7;
+    --deep-plum: #5e4b8b;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    color: var(--deep-plum);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: var(--white);
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid var(--lavender-light);
+}
+
+h1 {
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--deep-plum);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: var(--lavender-dark);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(60%); /* Makes text easier to read */
+}
+
+.hero-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: var(--lavender-dark);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--deep-plum);
+}
+
+/* Services */
+.services {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: var(--lavender-light);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+}
+
+.service-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.emoji { font-size: 2rem; }
+
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.8rem;
+    color: var(--lavender-dark);
+}
