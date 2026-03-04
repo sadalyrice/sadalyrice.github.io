@@ -14,7 +14,6 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation */
 header {
     background-color: var(--white);
     padding: 20px 0;
@@ -50,7 +49,6 @@ nav a:hover {
     color: var(--lavender-dark);
 }
 
-/* Hero Section */
 .hero {
     position: relative;
     height: 500px;
@@ -67,7 +65,7 @@ nav a:hover {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    filter: brightness(60%); /* Makes text easier to read */
+    filter: brightness(60%); 
 }
 
 .hero-text {
@@ -100,7 +98,6 @@ nav a:hover {
     background-color: var(--deep-plum);
 }
 
-/* Services */
 .services {
     padding: 80px 20px;
     text-align: center;
